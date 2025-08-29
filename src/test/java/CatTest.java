@@ -13,29 +13,28 @@ import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
- @Mock
+    @Mock
     Feline feline;
 
- @Test
+    @Test
     public void catSoundTest() {
 
-     Cat cat = new Cat(feline);
-     String sound = cat.getSound();
-     String expectedSound = "Мяу";
-     assertEquals(expectedSound, sound);
- }
+        Cat cat = new Cat(feline);
+        String actualSound = cat.getSound();
+        String expectedSound = "Мяу";
+        assertEquals(expectedSound, actualSound);
+    }
 
- @Test
+    @Test
     public void catFoodTest() throws Exception {
-     List<String> predatorFood = Arrays.asList("Животные", "Птицы", "Рыба");
-     when(feline.eatMeat()).thenReturn(predatorFood);
-     Cat cat = new Cat(feline);
-     List<String> actualFood = cat.getFood();
-     assertEquals(actualFood, predatorFood);
+        List<String> expectedFood = Arrays.asList("Животные", "Птицы", "Рыба");
+        when(feline.eatMeat()).thenReturn(expectedFood);
+        Cat cat = new Cat(feline);
+        List<String> actualFood = cat.getFood();
+        assertEquals(expectedFood, actualFood);
 
 
- }
-
+    }
 
 
 }
