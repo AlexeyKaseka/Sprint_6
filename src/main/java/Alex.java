@@ -5,10 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class Alexe extends Lion {
+public class Alex extends Lion {
 
-    public Alexe(Feline feline) throws Exception {
-        super("Хищник", feline);
+    public Alex(Feline feline) throws Exception {
+        super("Самец", feline);
 
     }
 
