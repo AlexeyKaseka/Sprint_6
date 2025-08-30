@@ -1,5 +1,4 @@
-import com.example.Feline;
-import com.example.Lion;
+package com.example;
 
 import java.util.Arrays;
 import java.util.List;

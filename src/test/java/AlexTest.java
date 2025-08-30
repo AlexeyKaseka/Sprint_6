@@ -1,5 +1,5 @@
+import com.example.Alex;
 import com.example.Feline;
-import com.example.Lion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -39,7 +39,6 @@ public class AlexTest {
     public void alexKittensTest() throws Exception {
         Alex alex = new Alex(feline);
         int expectedKittens = 0;
-        when(feline.getKittens()).thenReturn(expectedKittens);
         int actualKittens = alex.getKittens();
         assertEquals(expectedKittens, actualKittens);
     }
